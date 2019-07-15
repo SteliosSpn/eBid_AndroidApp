@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/bez">
+
+    <LinearLayout
+        android:id="@+id/myLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:id="@+id/auction_name"
+            android:layout_width="fill_parent"
+            android:layout_height="72dp"
+            android:layout_marginBottom="24dp"
+            android:text="Auctions Name"
+            android:gravity="center"
+            android:textSize="24dip"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"/>
+
+        <TextView android:id="@+id/auctionner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Auctionner Name"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:textColor="#FFFFFF"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/starts"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:padding="12dp"
+            android:text="Hour"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/countdown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:padding="12dp"
+            android:text="Hour"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"/>
+
+        <TextView android:id="@+id/starting_bid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Starting bid"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:textColor="#FFFFFF"/>
+
+        <TextView android:id="@+id/current_bid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Current bid"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:textColor="#FFFFFF"/>
+
+        <TextView android:id="@+id/highest_bidder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Highest_bidder"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:textColor="#FFFFFF"/>
+
+        <!-- Bid Label -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_bid_amount_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="#BBBBBB">
+            <EditText android:id="@+id/input_bid_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bid Amount"
+                android:textColor="#FFFFFF"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_place_bid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Place bid"
+            android:background="@color/firebrick"
+            android:textColor="#FFFFFF"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_vote"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Place Vote"
+            android:background="@color/firebrick"
+            android:textColor="#FFFFFF"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_start_now"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Start Now"
+            android:background="@color/firebrick"
+            android:textColor="#FFFFFF"/>
+
+        <ListView
+            android:id="@+id/list_rec"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:divider="#000"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false" />
+
+    </LinearLayout>
+</ScrollView>

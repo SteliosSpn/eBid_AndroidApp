@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/bez">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:id="@+id/myLayout">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="72dp"
+            android:layout_marginBottom="24dp"
+            android:text="Create Auction"
+            android:gravity="center"
+            android:textSize="24dip"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"/>
+
+        <!--  Name Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="#BBBBBB">
+            <EditText android:id="@+id/input_auctionName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:hint="Auction Name"
+                android:textColor="#FFFFFF"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="#BBBBBB">
+            <EditText android:id="@+id/input_bid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Starting Bid"
+                android:textColor="#FFFFFF"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/input_starts_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:textAlignment="center"
+            android:hint="Set Starting date"
+            android:textColor="#111111"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/input_starts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:textAlignment="center"
+            android:hint="Set Starting time"
+            android:textColor="#111111"/>
+
+        <Button
+            android:id="@+id/input_ends_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:textAlignment="center"
+            android:hint="Set Ending date"
+            android:textColor="#111111"/>
+
+        <Button
+            android:id="@+id/input_ends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:textAlignment="center"
+            android:hint="Set Ending time"
+            android:textColor="#111111"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="#BBBBBB">
+            <EditText android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:hint="Item Name"
+                android:textColor="#FFFFFF"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="#BBBBBB">
+
+            <EditText
+                android:id="@+id/item_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Country"
+                android:inputType="textCapWords"
+                android:textColor="#FFFFFF" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="#BBBBBB">
+            <EditText android:id="@+id/input_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:hint="Description"
+                android:textColor="#FFFFFF"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="#BBBBBB">
+            <EditText android:id="@+id/input_lat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Latitude"
+                android:textColor="#FFFFFF"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textColorHint="#BBBBBB">
+            <EditText android:id="@+id/input_lon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Longitude"
+                android:textColor="#FFFFFF"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <CheckBox android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Games"
+            android:textColor="#FFFFFF"/>
+
+        <CheckBox android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clothes"
+            android:textColor="#FFFFFF"/>
+
+        <CheckBox android:id="@+id/checkbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Furniture"
+            android:textColor="#FFFFFF"/>
+
+        <CheckBox android:id="@+id/checkbox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device"
+            android:textColor="#FFFFFF"/>
+
+        <CheckBox android:id="@+id/checkbox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toys"
+            android:textColor="#FFFFFF"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_upload"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Upload Image"
+            android:background="@color/firebrick"
+            android:textColor="#FFFFFF"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_plus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Add Item"
+            android:background="@color/firebrick"
+            android:textColor="#FFFFFF"/>
+
+        <!-- Signup Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_auction"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Create Auction"
+            android:background="@color/firebrick"
+            android:textColor="#FFFFFF"/>
+
+        <TextView android:id="@+id/link_back"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Back to All Actions"
+            android:gravity="center"
+            android:textSize="16dip"
+            android:textColor="#FFFFFF"/>
+
+
+    </LinearLayout>
+</ScrollView>
